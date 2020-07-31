@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+	<form action="" method="post">
+		<div class="form-group row">
+			<label for="Pregnancies" class="col-md-5 col-form-label">Pregnancies</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="Pregnancies" placeholder="Ex: 2">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="Glucose" class="col-md-5 col-form-label">Glucose</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 85" name="Glucose">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="BloodPressure" class="col-md-5 col-form-label">BloodPressure</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="BloodPressure" placeholder="Ex: 72">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="SkinThickness" class="col-md-5 col-form-label">SkinThickness</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 35" name="SkinThickness">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="Insulin" class="col-md-5 col-form-label">Insulin</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="Insulin" placeholder="Ex: 0">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="BMI" class="col-md-5 col-form-label">BMI</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 33.6" name="BMI">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="DiabetesPedigreeFunction" class="col-md-5 col-form-label">DiabetesPedigreeFunction</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="DiabetesPedigreeFunction" placeholder="Ex: 0.627">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="Age" class="col-md-5 col-form-label">Age</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 50" name="Age">
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary mb-2">Submit</button>
+	</form>
+</div>
+{% endblock %}

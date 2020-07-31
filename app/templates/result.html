@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="alert alert-warning row" role="alert">
+	<div class="col-md-12"><h3> Train set accuracy: {{ trAccur }} </h3></div>
+	<div class="col-md-12"><h3> Test set accuracy: {{ teAccur }} </h3></div>
+	<div class="col-md-12"><h3> Malignant ability: {{ abil }} </h3></div>
+    <div class="col-md-12"><h3> Result: {{ res }}. </h3></div>
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="bd-example row" style="margin-top: 20px">
+	<div class="card col-md-3">
+	  <img src="{{ url_for('static', filename='img/diabetes.jpg') }}" class="card-img-top" alt="...">
+	  <div class="card-body">
+		<h5 class="card-title"><b>Diabetes predictor</b></h5>
+		<p class="card-text">
+			<b>Date</b>: 05/09/2019
+			</br>
+			<b>Model</b>: Artificial Neural Network
+			</br>
+			<b>Accuracy on train set</b>: ~95%
+		</p>
+		<a href="{{ url_for('diabetes') }}" class="btn btn-primary">Predict</a>
+	  </div>
+	</div>
+	<div class="card col-md-3">
+	  <img src="{{ url_for('static', filename='img/breastCancer.jpg') }}" class="card-img-top" alt="...">
+	  <div class="card-body">
+		<h5 class="card-title"><b>Breast cancer predictor</b></h5>
+		<p class="card-text">
+			<b>Date</b>: 06/09/2019
+			</br>
+			<b>Model</b>: Artificial Neural Network
+			</br>
+			<b>Accuracy on train set</b>: ~99%
+			</br>
+			<b>Accuracy on test set</b>: ~96%
+		</p>
+		<a href="{{ url_for('breastCancerANN') }}" class="btn btn-primary">Predict</a>
+	  </div>
+	</div>
+	<div class="card col-md-3">
+	  <img src="{{ url_for('static', filename='img/skinCancer.jpg') }}" class="card-img-top" alt="...">
+	  <div class="card-body">
+		<h5 class="card-title"><b>Skin cancer predictor</b></h5>
+		<p class="card-text">
+			<b>Date</b>: 28/09/2019
+			</br>
+			<b>Model</b>: Convolutional Neural Network
+			</br>
+			<b>Accuracy on train set</b>: ~94%
+			</br>
+			<b>Accuracy on test set</b>: ~77%
+		</p>
+		<a href="{{ url_for('skinCancer') }}" class="btn btn-primary">Predict</a>
+	  </div>
+	</div>
+	<div class="card col-md-3">
+	  <img src="{{ url_for('static', filename='img/pneumonia.jpg') }}" class="card-img-top" alt="...">
+	  <div class="card-body">
+		<h5 class="card-title"><b>Pneumonia predictor</b></h5>
+		<p class="card-text">
+			<b>Date</b>: 29/09/2019
+			</br>
+			<b>Model</b>: Convolutional Neural Network
+			</br>
+			<b>Accuracy on train set</b>: ~95%
+			</br>
+			<b>Accuracy on test set</b>: ~%
+		</p>
+		<a href="{{ url_for('pneumonia') }}" class="btn btn-primary">Predict</a>
+	  </div>
+	</div>
+</div>
+{% endblock %}

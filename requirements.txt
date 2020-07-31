@@ -1,0 +1,10 @@
+pandas
+sklearn
+tensorflow
+keras
+flask
+numpy
+scipy
+pillow
+matplotlib
+h5py

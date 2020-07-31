@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+	<form action="" method="post" enctype="multipart/form-data">
+		<div class="form-group row">
+			<label for="file" class="col-md-5 col-form-label">Image:</label>
+			<div class="col-md-8">
+				<input type="file" name="file" class="form-control">
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary mb-2">Submit</button>
+	</form>
+</div>
+{% endblock %}

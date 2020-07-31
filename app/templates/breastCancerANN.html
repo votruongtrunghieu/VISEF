@@ -1,0 +1,188 @@
+ {% extends "base.html" %}
+{% block content %}
+<div class="row">
+	<form action="" method="post">
+		<div class="form-group row">
+			<label for="radius_mean" class="col-md-5 col-form-label">radius_mean</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="radius_mean" placeholder="Ex: 17.99">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="texture_mean" class="col-md-5 col-form-label">texture_mean</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 10.38" name="texture_mean">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="perimeter_mean" class="col-md-5 col-form-label">perimeter_mean</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="perimeter_mean" placeholder="Ex: 122.8">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="area_mean" class="col-md-5 col-form-label">area_mean</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 1001" name="area_mean">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="smoothness_mean" class="col-md-5 col-form-label">smoothness_mean</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="smoothness_mean" placeholder="Ex: 0.1184">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="compactness_mean" class="col-md-5 col-form-label">compactness_mean</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.2776" name="compactness_mean">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="concavity_mean" class="col-md-5 col-form-label">concavity_mean</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="concavity_mean" placeholder="Ex: 0.3001">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="concave_points_mean" class="col-md-5 col-form-label">concave_points_mean</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.1471" name="concave_points_mean">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="symmetry_mean" class="col-md-5 col-form-label">symmetry_mean</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="symmetry_mean" placeholder="Ex: 0.2419">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="fractal_dimension_mean" class="col-md-5 col-form-label">fractal_dimension_mean</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.07871" name="fractal_dimension_mean">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="radius_se" class="col-md-5 col-form-label">radius_se</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="radius_se" placeholder="Ex: 1.095">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="texture_se" class="col-md-5 col-form-label">texture_se</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.9053" name="texture_se">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="perimeter_se" class="col-md-5 col-form-label">perimeter_se</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="perimeter_se" placeholder="Ex: 8.589">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="area_se" class="col-md-5 col-form-label">area_se</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 153.4" name="area_se">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="smoothness_se" class="col-md-5 col-form-label">smoothness_se</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="smoothness_se" placeholder="Ex: 0.006399">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="compactness_se" class="col-md-5 col-form-label">compactness_se</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.04904" name="compactness_se">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="concavity_se" class="col-md-5 col-form-label">concavity_se</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="concavity_se" placeholder="Ex: 0.05373">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="concave_points_se" class="col-md-5 col-form-label">concave_points_se</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.01587" name="concave_points_se">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="symmetry_se" class="col-md-5 col-form-label">symmetry_se</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="symmetry_se" placeholder="Ex: 0.03003">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="fractal_dimension_se" class="col-md-5 col-form-label">fractal_dimension_se</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.006193" name="fractal_dimension_se">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="radius_worst" class="col-md-5 col-form-label">radius_worst</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="radius_worst" placeholder="Ex: 25.38">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="texture_worst" class="col-md-5 col-form-label">texture_worst</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 17.33" name="texture_worst">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="perimeter_worst" class="col-md-5 col-form-label">perimeter_worst</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="perimeter_worst" placeholder="Ex: 184.6">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="area_worst" class="col-md-5 col-form-label">area_worst</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 2019" name="area_worst">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="smoothness_worst" class="col-md-5 col-form-label">smoothness_worst</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="smoothness_worst" placeholder="Ex: 0.1622">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="compactness_worst" class="col-md-5 col-form-label">compactness_worst</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.6656" name="compactness_worst">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="concavity_worst" class="col-md-5 col-form-label">concavity_worst</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="concavity_worst" placeholder="Ex: 0.7119">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="concave_points_worst" class="col-md-5 col-form-label">concave_points_worst</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.2654" name="concave_points_worst">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="symmetry_worst" class="col-md-5 col-form-label">symmetry_worst</label>
+			<div class="col-md-8">
+			  <input type="text" class="form-control" name="symmetry_worst" placeholder="Ex: 0.4601">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="fractal_dimension_worst" class="col-md-5 col-form-label">fractal_dimension_worst</label>
+			<div class="col-md-8">
+				<input type="text" class="form-control" placeholder="Ex: 0.1189" name="fractal_dimension_worst">
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary mb-2">Submit</button>
+	</form>
+</div>
+{% endblock %}

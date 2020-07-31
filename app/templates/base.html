@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ title }} - Visef</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="{{ url_for('index') }}">
+						<img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="logo" class="img-thumbnail img-fluid rounded float-left">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="alert alert-primary col-md-12" role="alert">
+					This is AI predictor. Visef 2019 - 2020 by Võ Trường Trung Hiếu.
+				</div>
+			</div>
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>
